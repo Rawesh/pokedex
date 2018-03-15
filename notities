@@ -1,0 +1,13 @@
+Pikachu:
+-	hitpoints: 60
+-	energytype: lightning
+-	attacks: elektric ring (Damage = 60), pika punch (damage = 20)
+- 	weakness: Fire (damage word vermenigvuldigd met 1,5)
+-	resisstance: fightnig (waarde van 20)
+
+Charmeleon:
+-	hitpoints: 60
+-	energytype: Fire
+-	attacks: Flare (Damage = 30), Head Butt (damage = 10)
+- 	weakness: Fire (damage word vermenigvuldigd met 2)
+-	resisstance: fightnig (waarde van 10)
