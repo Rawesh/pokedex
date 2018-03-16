@@ -3,7 +3,7 @@
 class Pokemon  {
 
 	public $name;
-	public $energyType;
+	public $energyType; // must be a object of class EnergyType
 	public $hp;
 	public $attacks;
 	public $weakness; // value = x 1,5 <- pikachu, value = 2 <- Charmeleon

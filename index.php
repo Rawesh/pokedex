@@ -1,7 +1,10 @@
 <?php
 	require "pokemon.php";
 	require "energyType.php";
-	require "attack.php";
+	require "elektricRing.php";
+	require "pikaPunch.php";
+	require "flare.php";
+	require "headButt.php";
 	require "weakness.php";
 	require "resistance.php";
 	require "pikachu.php";
@@ -20,3 +23,7 @@ print_r($pikachu);
 echo '<pre>';
 
 print_r($charmeleon);
+echo '<pre>';
+
+echo "--- Battle ---";
+
