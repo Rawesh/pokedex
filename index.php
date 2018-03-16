@@ -1,21 +1,22 @@
 <?php
 	require "pokemon.php";
+	require "energyType.php";
+	require "attack.php";
+	require "weakness.php";
+	require "resistance.php";
+	require "pikachu.php";
+	require "charmeleon.php";
+
 
 //pokemons
-$pikachu = new pokemon('Pikachu', 'Lightning', 60, '[Elektric Ring, Pika Punch]', 'Fire', 'Fichtning');
-$charmeleon = new pokemon('Charmeleon', 'Fire', 60, '[Headbutt, Flare]', 'Water', 'Lightning');
+$pikachu = new Pikachu('Pikachu');
+$charmeleon = new Charmeleon('Charmeleon');
 
-//result
+// //result
 echo "Pokemons :";
-print_r('<pre>'. $pikachu . '</pre>');
-print_r('<pre>'. $charmeleon . '</pre>');
+echo '<pre>';
 
-// pikachu attacks charmeleon, the result of charmeleon hp
-echo "Pikachu valt Charmeleon aan met Elektric Ring, Dit is het resultaat van Charmeleon hieronder:";
-$charmeleon->hpCharmeleon();
-print_r('<pre>'. 'De aanval had weinig effect op Charmeleon' . '</pre>');
+print_r($pikachu);
+echo '<pre>';
 
-// Charmeleon attacks pikachu, the result of pikachu hp
-echo "Charmeleon valt pikachu nu aan met Flare, Dit is het resultaat van Pikachu hieronder:";
-$pikachu->hpPikachu();
-print_r('<pre>'. 'De aanval had veel effect op Pikachu, Pikachu houd weing hitpoints over' . '</pre>');
+print_r($charmeleon);
