@@ -16,10 +16,10 @@ class Pokemon  {
     }
 
     // returns a pokemon and the attack of the pokemon
-    public function attack($pokemon, $attack, $target){
+    public function attack($attack, $target){
 
     	//pokemon and the attack
-    	echo $pokemon->name . ": ";
+    	echo $this->name . ": ";
     	print_r($attack->attack . " | Damage= " . $attack->damage);
     	echo '<pre>';
 
@@ -30,7 +30,7 @@ class Pokemon  {
     	echo '<pre>';
 
     	//calculate hp of target
-    	$this->calculateHp($target, $pokemon->energyType, $attack->damage);
+    	$this->calculateHp($target, $this->energyType, $attack->damage);
     }
 
     public function calculateHp($target, $energyType, $damage){
