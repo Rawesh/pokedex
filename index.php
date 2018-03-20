@@ -9,10 +9,10 @@ $charmeleon = new Charmeleon('Charmeleon');
 echo "Pokemons :";
 echo '<pre>';
 
-echo $pikachu;
+echo $pikachu->name;
 echo "<pre>";
  
-echo $charmeleon;
+echo $charmeleon->name;
 echo "<pre>";
 
 //battle: charmeleon attacks pikachu
