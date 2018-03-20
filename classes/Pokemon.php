@@ -23,7 +23,7 @@ class Pokemon  {
     	print_r($attack->attack . " | Damage= " . $attack->damage);
     	echo '<pre>';
 
-    	echo "--- Target ---";
+    	echo "!TARGET!:";
     	echo "<pre>";
     	//target
     	echo $target->name . " Hitpoints before attack: " . $target->hp;
