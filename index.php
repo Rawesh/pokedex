@@ -10,17 +10,26 @@ $pokemon = new Pokemon();
 echo "Pokemons :";
 echo '<pre>';
 
-print_r($pikachu);
-echo '<pre>';
+echo $pikachu;
+echo "<pre>";
+ 
+echo $charmeleon;
+echo "<pre>";
 
-print_r($charmeleon);
-echo '<pre>';
-
-echo "--- Attack ---";
+//battle: charmeleon attacks pikachu
+echo "--- First move ---";
 echo '<pre>';
 
 // attack of a pokemon 2 arguments 1. the pokemon, 2. the attack 
 $pokemon->attack($charmeleon, $charmeleon->attacks[0], $pikachu);
+echo '<pre>';
+
+//battle: pikachu attacks charmeleon
+echo "--- Second move ---";
+echo '<pre>';
+
+// attack of a pokemon 2 arguments 1. the pokemon, 2. the attack 
+$pokemon->attack($pikachu, $pikachu->attacks[0], $charmeleon);
 echo '<pre>';
 
 

@@ -59,6 +59,6 @@ class Pokemon  {
     		$result = $target->hp - $damage;
     	}
     	
-    	print_r("HP after attack: " . $result);
+    	print_r($target->name . " hp after attack: " . $result);
     }
 } 
