@@ -7,9 +7,9 @@ class Pikachu extends Pokemon{
 		$this->name = $name;
 		$this->energyType = new EnergyType('Lightning');
 		$this->hp = 60;
-		$this->attacks =  [new ElektricRing('Elektric Ring', 50), new PikaPunch('Pika Punch', 50)];
-		$this->weakness = new Weakness('Fire', 1.5);
-		$this->resistance =  new Resistance('Fightning', 20);
+		$this->attacks =  [new Attack('Elektric Ring', 50), new Attack('Pika Punch', 50)];
+		$this->weakness = new Weakness(new EnergyType('Fire'), 1.5);
+		$this->resistance =  new Resistance(new EnergyType('Fightning'), 20);
 	}
 
 

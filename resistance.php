@@ -2,9 +2,12 @@
 
 class Resistance {
 
-	public $type;
+	public $energyType; // EnergyType class
+	public $value;
 
-	public function __construct($type, $value) {
-		$this->type = [$type, 'value' => $value];
+	public function __construct($energyType, $value) {
+		$this->energyType = $energyType;
+		$this->value = $value;
+
 	}
 }

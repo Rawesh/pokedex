@@ -2,12 +2,12 @@
 
 class Pokemon  {
 
-	public $name;
+	public $name; // pokemon name
 	public $energyType; // must be a object of class EnergyType
-	public $hp;
-	public $attacks;
-	public $weakness; // value = x 1,5 <- pikachu, value = 2 <- Charmeleon
-	public $resistance; // value = 20 <- pikachu, value = 10 <- Charmeleon
+	public $hp; // hitpoints
+	public $attacks; // must be attacks
+	public $weakness; // pokemon weakness and value of weakness
+	public $resistance; // pokemon resistance and value of risistance
 
 
 	public function __toString() {

@@ -1,14 +1,5 @@
 <?php
-	require "pokemon.php";
-	require "energyType.php";
-	require "elektricRing.php";
-	require "pikaPunch.php";
-	require "flare.php";
-	require "headButt.php";
-	require "weakness.php";
-	require "resistance.php";
-	require "pikachu.php";
-	require "charmeleon.php";
+	require "nav.php";
 
 
 //pokemons

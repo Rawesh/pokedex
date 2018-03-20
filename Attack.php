@@ -1,9 +1,8 @@
 <?php 
+class Attack{
 
-class Flare {
-
-	public $attack;
-	public $damage;
+public $attack;
+public $damage;
 
 	public function __construct($attack, $damage) {
 		$this->attack = $attack;
