@@ -5,7 +5,7 @@ public $attack;
 public $damage;
 
 	public function __construct($attack, $damage) {
-		$this->attack = $attack;
-		$this->damage = $damage;
+		$this->attack = $attack; // attack
+		$this->damage = $damage; // attack value
 	}
 }
