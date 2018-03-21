@@ -2,6 +2,7 @@
 
 class EnergyType {
 
+	//static
 	const FIRE = 'Fire';
 	const LIGHTNING = 'Lightning';
 	const WATER = 'Water';
