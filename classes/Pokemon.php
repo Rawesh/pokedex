@@ -36,13 +36,13 @@ class Pokemon  {
     public function calculateHp($target, $energyType, $damage){
 
     	//calculate weakness and resisitance
-    	if ($energyType == $target->weakness->energyType) {
+    	if ($energyType == $target->weakness->getEnergyType()->type) { // get value of private variable
     		
     		// calculate the damage when it is the weakness
-    		$weaknessResult = $damage * $target->weakness->value; 
+    		$weaknessResult = $damage * $target->weakness->getValue(); // get value of private variable 
     		$result = $target->hp - $weaknessResult;
 
-    		print_r($target->resistance->energyType->type . " is the weakness of " . $target->name . " the damage multiplies with " . $target->weakness->value);
+    		print_r($target->resistance->energyType->type . " is the weakness of " . $target->name . " the damage multiplies with " . $target->weakness->getValue()); // get value of private variable
     		echo "<pre>";
 
     	}elseif($energyType == $target->resistance->energyType){
