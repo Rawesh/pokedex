@@ -4,7 +4,7 @@ class Pokemon  {
 
 	public $name; // pokemon name
 	public $energyType; // must be a object of class EnergyType
-	public $hp; // hitpoints
+	private $hp; // hitpoints
 	public $attacks; // must be attacks
 	public $weakness; // pokemon weakness and value of weakness
 	public $resistance; // pokemon resistance and value of risistance
@@ -13,6 +13,14 @@ class Pokemon  {
 	public function __toString() {
 
         return json_encode($this);
+    }
+
+    public function getHp(){
+        return $this->hp;
+    }
+
+    public function setHp($hp){
+        $this->hp = $hp;
     }
 
     // returns a pokemon and the attack of the pokemon
