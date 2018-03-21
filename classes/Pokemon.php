@@ -37,36 +37,28 @@ class Pokemon  {
     	echo $target->name . " Hitpoints before attack: " . $target->hp;
     	echo '<pre>';
 
-    	//calculate hp of target
-    	$this->calculateHp($target, $this->energyType, $attack->damage);
-    }
-
-    public function calculateHp($target, $energyType, $damage){
+        $damage = $attack->damage;
 
     	//calculate weakness and resisitance
-    	if ($energyType == $target->weakness->getEnergyType()->type) { // get value of private variable
-    		
+    	if ($this->energyType->type == $target->weakness->getEnergyType()->type) { // get value of private variable 
     		// calculate the damage when it is the weakness
-    		$weaknessResult = $damage * $target->weakness->getValue(); // get value of private variable 
-    		$result = $target->hp - $weaknessResult;
+    		$damage = $attack->damage * $target->weakness->getValue(); // get value of private variable 
 
     		print_r($target->resistance->energyType->type . " is the weakness of " . $target->name . " the damage multiplies with " . $target->weakness->getValue()); // get value of private variable
     		echo "<pre>";
 
-    	}elseif($energyType == $target->resistance->energyType){
+    	} elseif($this->energyType == $target->resistance->energyType){
 
     		//calculate the resistance when it is resistance
-    		$resistanceResult = $damage - $target->resistance->value;
-    		$result = $target->hp - $resistanceResult;
+    		$damage = $attack->damage - $target->resistance->value;
 
     		print_r($target->resistance->energyType->type . " is the resistance of " . $target->name . " the damage value counts down with " . $target->resistance->value);
     		echo "<pre>";
 
-    	}else{
-    		// if there is no weakness or resistance then it is the current damage
-    		$result = $target->hp - $damage;
     	}
+
+        $target->setHp($target->hp - $damage);
     	
-    	print_r($target->name . " hp after attack: " . $result);
+    	print_r($target->name . " hp after attack: " . $target->hp);
     }
 } 

@@ -2,6 +2,11 @@
 
 class EnergyType {
 
+	const FIRE = 'Fire';
+	const LIGHTNING = 'Lightning';
+	const WATER = 'Water';
+	const FIGHTING = 'Fighting';
+
 	public $type;
 
 	public function __construct($type) {
