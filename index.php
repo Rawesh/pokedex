@@ -43,10 +43,10 @@ $storage->add($charmeleon);
 $storage->add($pikachu);
 
 // delete one
-// $storage->deleteOne('Pikachu');
+$storage->deleteOne('Pikachu');
 
 //delete all
-// $storage->deleteAll();
+$storage->deleteAll();
 
 
 $storage->showAll();
